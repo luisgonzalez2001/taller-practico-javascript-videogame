@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="game-container">
+    <div id="game-container">
         <canvas id="game"></canvas>
 
         <div class="btns">
@@ -18,11 +18,21 @@
         </div>
 
         <div class="messages">
-            <p>Parrafo de ejemplo</p>
+            <p>Vidas: <span id="lives"></span></p>
+            <p>Tiempo: ⏰<span id="time"></span></p>
+            <p>Record: 🏁<span id="record"></span></p>
+            <p><span id="result"></span></p>
         </div>
-
-        <script src="maps.js"></script>
-        <script src="game.js"></script>
     </div>
+
+    <div id="finally">
+        <p id="mResult"></p>
+        <p>Record: 🏁<span id="mRecord"></span></p>
+        <button id="restart">Restart</button>
+        <p>Tiempo: ⏰<span id="mTime"></span></p>
+    </div>
+
+    <script src="maps.js"></script>
+    <script src="game.js"></script>
 </body>
 </html>
